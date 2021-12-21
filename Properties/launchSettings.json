@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BackUpFiles": {
+      "commandName": "Project",
+      "commandLineArgs": "F:\\sourse F:\\destination F:\\logFiles 0:0:10"
+    }
+  }
+}
