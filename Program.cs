@@ -47,16 +47,16 @@ namespace BackUpFiles
 
                 BackupTimer backupTimer = new BackupTimer(config);
             }
-            else if (args.Length == 0) //4
-            {
-                BackupConfig config = new BackupConfig();
-                config.IntervalTime = new TimeSpan(0,0,10);
-                config.SoursePath = @"D:\sourse\";
-                config.DestinationPath = @"D:\destination\";
-                config.LogPatch = @"D:\logFiles\";
+            ////else if (args.Length == 0) //4
+            ////{
+            ////    BackupConfig config = new BackupConfig();
+            ////    config.IntervalTime = new TimeSpan(0,0,10);
+            ////    config.SoursePath = @"D:\sourse\";
+            ////    config.DestinationPath = @"D:\destination\";
+            ////    config.LogPatch = @"D:\logFiles\";
 
-                BackupTimer backupTimer = new BackupTimer(config);
-            }
+            ////    BackupTimer backupTimer = new BackupTimer(config);
+            ////}
 
             Console.ReadLine();
         }

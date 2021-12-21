@@ -22,6 +22,8 @@ namespace BackUpFiles
             Timer.Interval = config.IntervalTime.TotalMilliseconds;
             Timer.Elapsed += new ElapsedEventHandler(Timer_Elapsed);
             Timer.Enabled = true;
+
+            BackupStart();
         }
 
         public void TimerStop()
@@ -36,8 +38,11 @@ namespace BackUpFiles
 
         private void Timer_Elapsed(object sender, ElapsedEventArgs e)
         {
-            //Console.WriteLine($"{DateTime.Now} | Elapsed");
+            BackupStart();
+        }
 
+        private void BackupStart()
+        {
             lock (locker)
             {
                 Console.WriteLine($"{DateTime.Now} | Timer Backup Elapsed");
